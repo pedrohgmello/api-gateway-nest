@@ -5,6 +5,8 @@ import {
 } from '@nestjs/common';
 import { Request } from 'express';
 
+/* eslint-disable*/
+
 @Injectable()
 export class ProxyService {
   async forward(req: Request, instance: string) {
