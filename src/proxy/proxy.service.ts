@@ -15,7 +15,6 @@ export class ProxyService {
       ...headers
     } = rawHeaders;
     try {
-      console.log(`URL CONSULTADA: ${instance}${url} | método: ${method}`);
       const response = await fetch(`${instance}${url}`, {
         method,
         body: JSON.stringify(body),
